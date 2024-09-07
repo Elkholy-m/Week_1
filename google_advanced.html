@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="index.html">Google Search</a>
+
+        </nav>
+    </header>
+
+    <section class="section">
+        <figure class="section__figure">
+            <img src="img/download.png" alt="Olympics in paris" title="Olympics in paris" width="500" height="200">
+            <figcaption class="offscrean">
+
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main__adv">
+        <form action="https://www.google.com/search"
+        class="main__form--adv" method="get">
+            <!-- All these words -->
+            <div class="main__div">
+                <label class="main__label" for="all_words">Find pages with all these words:</label>
+                <input class="main__input--adv" type="text" id="all_words" name="as_q">
+            </div>
+
+            <!-- Exact word or phrase -->
+            <div class="main__div">
+                <label class="main__label" for="exact_phrase">Find pages with this exact word or phrase:</label>
+                <input class="main__input--adv" type="text" id="exact_phrase" name="as_oq">
+            </div>
+
+            <!-- Any of these words -->
+            <div class="main__div">
+                <label class="main__label" for="any_words">Find pages with any of these words:</label>
+                <input class="main__input--adv" type="text" id="any_words" name="as_eq">
+            </div>
+
+            <!-- None of these words -->
+            <div class="main__div">
+                <label class="main__label" for="none_words">Find pages with none of these words:</label>
+                <input class="main__input--adv" type="text" id="none_words" name="as_q">
+            </div>
+                <!-- Submit Button -->
+            <button class="main__button" type="submit">Search</button>
+        </main>
+
+        <footer>
+            <p class="footer__p">
+                <span class="nowrap">Copyright &copy; <time id="year"></time>MAHMOUD</span>
+                <span class="nowrap"></span>
+            </p>
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Google Images</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="index.html">Google Search</a>
+
+        </nav>
+    </header>
+
+    <section class="section">
+        <figure class="section__figure">
+            <img src="img/download.png" alt="Olympics in paris" title="Olympics in paris" width="500" height="200">
+            <figcaption class="offscrean">
+
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">
+        <form action="https://www.google.com/search" method="get" class="main__form">
+            <input type="hidden" name="tbm" value="isch"> <!-- tbm=isch is for image search -->
+            <input class="main__input" type="text" name="q" autocomplete="off" placeholder="search Google or  type a URL" required>
+            <button class="main__button" type="submit">Search</button>
+        </form>
+    </main>
+
+    <footer>
+        <p class="footer__p">
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+            <span class="nowrap">MAHMOUD</span>
+        </p>
+    </footer>
+</body>
+</html>
